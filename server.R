@@ -16,7 +16,7 @@ df <- readHTMLTable(url1, header = T)
 #url2 <- paste("https://www.ecdc.europa.eu/sites/default/files/documents/COVID-19-geographic-disbtribution-worldwide-",format(Sys.time(), "%Y-%m-%d"), ".xlsx", sep = "")
 #GET(url2, authenticate(":", ":", type="ntlm"), write_disk(tf <- tempfile(fileext = ".xlsx")))
 #data <- read_excel(tf)
-data <- read_excel('C:/Users/ivemado/Downloads/COVID-19-geographic-disbtribution-worldwide-2020-03-24.xlsx')
+data <- read_excel('./COVID-19-geographic-disbtribution-worldwide-2020-03-24.xlsx')
 
 #merge databases, sort and create summary variables
 df <- data.frame(Reduce(rbind, df))
